@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    /*overflow: hidden;*/
+}
+
+.container {
+    widows: 100%;
+    position: relative;
+}
+
+.clear {
+    clear: both;
+}
+
+.nav {
+    width: 100%;
+    height: 20vh;
+    text-transform: uppercase;
+}
+
+.nav h1 {
+    text-align: center;
+    margin: 2% 0%;
+    font-size: 45px;
+}
+
+.nav ul {
+    width: 60%;
+    height: 100%;
+    position: relative;
+    left: 20%;
+    top: 25%;
+    /* border: 1px solid yellow; */
+}
+
+.nav ul li {
+    float: left;
+    margin-left: 7%;
+    font-size: 22px;
+}
+
+.nav ul li:hover {
+    transform: scale(1.5);
+    /* transition-duration: 1s; */
+}
+
+.foodimg {
+    position: relative;
+    width: 50%;
+    height: 60vh;
+    margin-top: 10vh;
+    background-image: url('images/Cheap-Fast-Food-Options-McDonalds.jpg');
+    background-size: 100% 100%;
+    border: none;
+    animation-name: food-image;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-direction: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes food-image {
+    from {
+        left: -400px;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+
+.foodimg:hover {
+    transform: scale(.9);
+    transition-duration: 3s;
+}
+
+.food-order {
+    width: 50%;
+    height: 60vh;
+    position: absolute;
+    top: 34vh;
+    right: 0;
+    text-align: center;
+}
+
+.food-order h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+    margin: 0% auto;
+    position: relative;
+    animation-name: food-h1;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-direction: forwards;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes food-h1 {
+    from {
+        right: -400px;
+        opacity: 0;
+    }
+
+    to {
+        right: 0px;
+        opacity: 1;
+    }
+}
+
+.food-order p {
+    position: relative;
+    width: 80%;
+    font-size: 18px;
+    color: #323232;
+    margin: 5% auto;
+    opacity: 0;
+    animation-name: food-p;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    animation-direction: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes food-p {
+    from {
+        right: -400px;
+        opacity: 0;
+    }
+
+    to {
+        right: 0px;
+        opacity: 1;
+    }
+}
+
+.food-order button {
+    width: 20%;
+    height: 10%;
+    border-radius: 20px;
+    border: none;
+    outline-style: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    background-image: linear-gradient(to left, teal, transparent);
+    position: relative;
+    animation-name: food-btn;
+    animation-duration: 3s;
+    animation-delay: 7s;
+    animation-direction: forwards;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes food-btn {
+    from {
+        right: -400px;
+        opacity: 0;
+    }
+
+    to {
+        right: 0px;
+        opacity: 1;
+    }
+}
+
+.food-order button:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to right, teal, transparent);
+    color: whitesmoke;
+    box-shadow: 5px -5px 20px 3px black;
+}
+
+.food-order:hover {
+    transform: scale(.9);
+    transition-duration: 3s;
+}
+
+.products {
+    position: relative;
+    height: 120vh;
+}
+
+.products h1 {
+    text-align: center;
+    margin: 6% 0%;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.c1 {
+    height: 250px;
+    width: 200px;
+    transition: 3s;
+    float: left;
+    margin-left: 100px;
+    margin-bottom: 7%;
+    border-radius: 20px;
+
+}
+
+.c1:nth-child(2) {
+    background-image: url('images/chef-making-ok-sign-white-background_1368-2804.jpg');
+    background-size: 100% 100%;
+    transform: rotate(-10deg);
+}
+
+.c1:nth-child(3) {
+    background-image: url('images/chefimage.jpg');
+    background-size: 100% 100%;
+    transform: rotate(10deg);
+}
+
+.c1:nth-child(4) {
+    background-image: url('images/c19_eatdrink_overview_somuchfood_v1.jpg');
+    background-size: 100% 100%;
+    transform: rotate(-10deg);
+}
+
+.c1:nth-child(5) {
+    background-image: url('images/Cheap-Fast-Food-Options-McDonalds.jpg');
+    background-size: 100% 100%;
+    transform: rotate(10deg);
+}
+
+.c1:nth-child(6) {
+    background-image: url('images/Brian-Young-TopChef.jpg');
+    background-size: 100% 100%;
+    transform: rotate(-10deg);
+}
+
+.c1:nth-child(7) {
+    background-image: url('images/11861111-chef-man-.jpg');
+    background-size: 100% 100%;
+    transform: rotate(10deg);
+}
+
+.c1:nth-child(8) {
+    background-image: url('images/20-3-large.jpg');
+    background-size: 100% 100%;
+    transform: rotate(-10deg);
+}
+
+.c1:nth-child(9) {
+    background-image: url('images/5d605a4b2e22af4e0b4f41d2-1920-1440.jpg');
+    background-size: 100% 100%;
+    transform: rotate(10deg);
+}
+
+/* .c1:nth-child(10){
+    background-image: url('images/1.jpg');
+    background-size: 100% 100%;
+    transform: rotate(-10deg);
+} */
+
+.c1:hover {
+    transform: rotate(0deg);
+    transform: scale(1.2);
+    transition-duration: 2s;
+    box-shadow: 5px -5px 10px 5px gray;
+}
+
+.c2:hover {
+    transform: rotate(0deg);
+    transform: scale(.9);
+    transition-duration: 2s;
+    box-shadow: 5px -5px 10px 5px gray;
+}
+
+.portfolio {
+    width: 100%;
+    height: 140vh;
+    background-image: linear-gradient(rgba(104, 104, 104, 0.623), rgba(104, 104, 104, 0.623));
+    padding-top: 1px;
+}
+
+.portfolio h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 6% auto;
+}
+
+/* .portfolio .c1{
+    transform: rotate(0deg);
+    transform: scale(1.2);
+    transition-duration: 2s;
+    box-shadow: -5px 5px 10px 5px teal;
+} */
+/* .portfolio .c2{
+    transform: rotate(0deg);
+    transform: scale(.9);
+    transition-duration: 2s;
+    box-shadow: -5px 5px 10px 5px teal;
+} */
+
+.portfolio .c1:hover {
+    transform: rotate(0deg);
+    transform: scale(1.2);
+    transition-duration: 2s;
+    box-shadow: 5px -5px 10px 5px teal;
+}
+
+.portfolio .c2:hover {
+    transform: rotate(0deg);
+    transform: scale(.9);
+    transition-duration: 2s;
+    box-shadow: 5px -5px 10px 5px teal;
+}
+
+.portfolio .c1 span {
+    position: absolute;
+    visibility: hidden;
+    right: 0;
+    bottom: 50px;
+    text-align: center;
+    font-size: 24px;
+    background-color: teal;
+    width: 200px;
+    height: 30px;
+    color: black;
+}
+
+.portfolio .c1:hover span {
+    visibility: visible;
+}
+
+.upper {
+    position: fixed;
+    right: 10px;
+    bottom: 30px;
+    width: 60px;
+    height: 40px;
+    background: teal;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 30px;
+    padding-top: 8px;
+    color: white;
+}
